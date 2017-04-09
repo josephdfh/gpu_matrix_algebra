@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h> //required for rand() only to initialize sample matrices
-#include "cuda_runtime.h"
 #include "cublas_v2.h"
 
 extern "C" __declspec(dllexport)
