@@ -13,7 +13,7 @@ B = c(2,3)
     }
     C = .C('mmult', A,B,double(m*n),as.integer(m),as.integer(k),as.integer(n))[[3]]
     dyn.unload('mmult.dll')
-    C
+    matrix(C,nrow=m)
 }
 A = matrix(A, nrow=2)
 C = A %*% B
